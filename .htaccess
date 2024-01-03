@@ -12,7 +12,8 @@
     RewriteEngine On
      # Exclude specific directories from the custom routing
     # DirectoryIndex app/routes/Main.php
-    RewriteRule ^(?:Assets|css|img|js)/ - [L]
+    RewriteRule ^(?:Assets|contactform|css|img|js|lib)/ - [L]
+    RewriteRule ^(?:public|contactform|css|img|js|lib)/ - [L]
     # Rewrite everything else
     RewriteRule ^(.*)$ app/routes/Main.php?url=$1 [QSA,L]
 </IfModule>
