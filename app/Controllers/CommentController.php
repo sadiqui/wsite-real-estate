@@ -18,8 +18,7 @@ class CommentController
     {
         $comments = $this->commentDao->getAllComments();
         $totalComments = count($comments);
-        // You can pass $comments and $totalComments to the view
-        // Example: return view('comments', ['comments' => $comments, 'totalComments' => $totalComments]);
+        // Possible to pass $comments and $totalComments to the view
     }
 
     public function store()
